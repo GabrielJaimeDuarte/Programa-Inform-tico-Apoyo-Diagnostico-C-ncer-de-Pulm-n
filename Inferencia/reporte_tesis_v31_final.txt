@@ -1,0 +1,184 @@
+==============================================
+  REPORTE FINAL V31 — TRIPLE ENSEMBLE
+  Métricas por nódulo Y por paciente
+==============================================
+Modelo A : D:/Modelo_Prueba_2/models/yolo_pulmon_nano/weights/best.pt
+Modelo B : D:/Modelo_Prueba_2/models/yolo_pulmon_nocturno2/weights/best.pt
+Modelo C : D:/Modelo_Prueba_2/models/yolo_pulmon_small_v22/weights/best.pt
+
+----------------------------------------------
+  MÉTRICAS POR NÓDULO ÚNICO
+----------------------------------------------
+Nódulos únicos en validación : 258
+Negativos únicos             : 712
+
+Matriz de confusión:
+  TP (nódulos detectados)    : 228
+  TN (sanos correctos)       : 677
+  FP (falsas alarmas)        : 35
+  FN (nódulos perdidos)      : 30
+
+  Exactitud      : 93.30%
+  Sensibilidad   : 88.37%
+  Precisión      : 86.69%
+  Especificidad  : 95.08%
+  F1-Score       : 87.52%
+
+----------------------------------------------
+  MÉTRICAS POR PACIENTE COMPLETO
+----------------------------------------------
+Pacientes con nódulos (reales)    : 111
+Pacientes sin nódulos (reales)    : 67
+Total pacientes evaluados         : 178
+
+Matriz de confusión por paciente:
+  TP pacientes detectados          : 105
+     - Detectó TODOS sus nódulos   : 84
+     - Detectó ALGUNOS (parcial)   : 21
+  TN pacientes sanos correctos     : 61
+  FP pacientes con falsa alarma    : 6
+  FN pacientes sin detección       : 6
+
+  Exactitud por paciente    : 93.26%
+  Sensibilidad por paciente : 94.59%
+  Precisión por paciente    : 94.59%
+  Especificidad por paciente: 91.04%
+  F1 por paciente           : 94.59%
+
+----------------------------------------------
+  PACIENTES CON TODOS LOS NÓDULOS DETECTADOS
+----------------------------------------------
+  paciente_006  (1/1 nódulos)
+  paciente_010  (1/1 nódulos)
+  paciente_015  (1/1 nódulos)
+  paciente_036  (3/3 nódulos)
+  paciente_040  (1/1 nódulos)
+  paciente_047  (2/2 nódulos)
+  paciente_063  (3/3 nódulos)
+  paciente_066  (1/1 nódulos)
+  paciente_068  (3/3 nódulos)
+  paciente_079  (1/1 nódulos)
+  paciente_087  (1/1 nódulos)
+  paciente_091  (1/1 nódulos)
+  paciente_099  (2/2 nódulos)
+  paciente_129  (3/3 nódulos)
+  paciente_136  (3/3 nódulos)
+  paciente_137  (6/6 nódulos)
+  paciente_139  (3/3 nódulos)
+  paciente_143  (1/1 nódulos)
+  paciente_151  (1/1 nódulos)
+  paciente_161  (3/3 nódulos)
+  paciente_202  (2/2 nódulos)
+  paciente_203  (1/1 nódulos)
+  paciente_208  (5/5 nódulos)
+  paciente_223  (3/3 nódulos)
+  paciente_227  (1/1 nódulos)
+  paciente_229  (1/1 nódulos)
+  paciente_232  (1/1 nódulos)
+  paciente_237  (1/1 nódulos)
+  paciente_251  (1/1 nódulos)
+  paciente_284  (1/1 nódulos)
+  paciente_293  (2/2 nódulos)
+  paciente_311  (1/1 nódulos)
+  paciente_313  (1/1 nódulos)
+  paciente_314  (2/2 nódulos)
+  paciente_320  (2/2 nódulos)
+  paciente_324  (1/1 nódulos)
+  paciente_325  (4/4 nódulos)
+  paciente_328  (3/3 nódulos)
+  paciente_337  (1/1 nódulos)
+  paciente_361  (1/1 nódulos)
+  paciente_370  (1/1 nódulos)
+  paciente_386  (3/3 nódulos)
+  paciente_388  (1/1 nódulos)
+  paciente_390  (3/3 nódulos)
+  paciente_392  (2/2 nódulos)
+  paciente_393  (2/2 nódulos)
+  paciente_395  (2/2 nódulos)
+  paciente_402  (5/5 nódulos)
+  paciente_406  (1/1 nódulos)
+  paciente_427  (1/1 nódulos)
+  paciente_433  (1/1 nódulos)
+  paciente_469  (2/2 nódulos)
+  paciente_485  (4/4 nódulos)
+  paciente_503  (5/5 nódulos)
+  paciente_507  (1/1 nódulos)
+  paciente_514  (2/2 nódulos)
+  paciente_540  (1/1 nódulos)
+  paciente_544  (2/2 nódulos)
+  paciente_551  (3/3 nódulos)
+  paciente_561  (1/1 nódulos)
+  paciente_566  (2/2 nódulos)
+  paciente_567  (2/2 nódulos)
+  paciente_574  (1/1 nódulos)
+  paciente_594  (7/7 nódulos)
+  paciente_598  (2/2 nódulos)
+  paciente_600  (2/2 nódulos)
+  paciente_625  (2/2 nódulos)
+  paciente_628  (3/3 nódulos)
+  paciente_638  (1/1 nódulos)
+  paciente_652  (3/3 nódulos)
+  paciente_672  (3/3 nódulos)
+  paciente_681  (4/4 nódulos)
+  paciente_698  (1/1 nódulos)
+  paciente_709  (3/3 nódulos)
+  paciente_751  (2/2 nódulos)
+  paciente_752  (4/4 nódulos)
+  paciente_808  (5/5 nódulos)
+  paciente_814  (1/1 nódulos)
+  paciente_818  (1/1 nódulos)
+  paciente_826  (1/1 nódulos)
+  paciente_834  (1/1 nódulos)
+  paciente_854  (1/1 nódulos)
+  paciente_876  (1/1 nódulos)
+  paciente_884  (2/2 nódulos)
+
+----------------------------------------------
+  PACIENTES CON DETECCIÓN PARCIAL
+----------------------------------------------
+  paciente_045  (1/2 nódulos detectados)
+  paciente_097  (1/2 nódulos detectados)
+  paciente_115  (5/7 nódulos detectados)
+  paciente_150  (2/3 nódulos detectados)
+  paciente_163  (3/4 nódulos detectados)
+  paciente_166  (1/2 nódulos detectados)
+  paciente_236  (3/4 nódulos detectados)
+  paciente_335  (2/3 nódulos detectados)
+  paciente_342  (1/2 nódulos detectados)
+  paciente_529  (1/2 nódulos detectados)
+  paciente_537  (3/5 nódulos detectados)
+  paciente_562  (11/12 nódulos detectados)
+  paciente_691  (7/9 nódulos detectados)
+  paciente_692  (4/5 nódulos detectados)
+  paciente_742  (1/2 nódulos detectados)
+  paciente_757  (2/3 nódulos detectados)
+  paciente_765  (1/2 nódulos detectados)
+  paciente_800  (1/2 nódulos detectados)
+  paciente_835  (1/2 nódulos detectados)
+  paciente_843  (2/3 nódulos detectados)
+  paciente_883  (1/2 nódulos detectados)
+
+----------------------------------------------
+  PACIENTES CON NÓDULOS QUE NO SE DETECTARON
+----------------------------------------------
+  paciente_114  (0/1 nódulos detectados)
+  paciente_178  (0/1 nódulos detectados)
+  paciente_323  (0/1 nódulos detectados)
+  paciente_363  (0/1 nódulos detectados)
+  paciente_468  (0/1 nódulos detectados)
+  paciente_839  (0/1 nódulos detectados)
+
+----------------------------------------------
+  PACIENTES SANOS CON FALSA ALARMA
+----------------------------------------------
+  paciente_034  (1 falsa(s) alarma(s))
+  paciente_134  (1 falsa(s) alarma(s))
+  paciente_300  (1 falsa(s) alarma(s))
+  paciente_389  (1 falsa(s) alarma(s))
+  paciente_693  (2 falsa(s) alarma(s))
+  paciente_704  (1 falsa(s) alarma(s))
+
+----------------------------------------------
+  PACIENTES SANOS CORRECTAMENTE IDENTIFICADOS
+----------------------------------------------
+  Total: 61 pacientes sanos sin ninguna alarma
