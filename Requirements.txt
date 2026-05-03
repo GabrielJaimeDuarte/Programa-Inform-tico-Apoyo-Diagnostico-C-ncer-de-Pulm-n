@@ -1,0 +1,9 @@
+PyQt6
+ultralytics
+opencv-python
+pillow
+openpyxl
+numpy
+pydicom
+streamlit
+simpleitk
