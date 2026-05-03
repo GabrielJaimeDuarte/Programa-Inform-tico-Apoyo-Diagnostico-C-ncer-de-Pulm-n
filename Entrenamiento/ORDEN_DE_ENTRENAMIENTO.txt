@@ -1,0 +1,9 @@
+﻿ORDEN DE ENTRENAMIENTO
+=======================
+
+Pesos base en: D:\Modelo_Prueba_2\yolov8n.pt y yolov8s.pt
+
+1. entrenar_nano.py      -> yolo_pulmon_nano      (Modelo A)
+2. entrenar_nocturno2.py -> yolo_pulmon_nocturno2 (Modelo B)
+   REQUIERE yolo_pulmon_nocturno como base
+3. entrenar_small_v22.py -> yolo_pulmon_small_v22 (Modelo C)

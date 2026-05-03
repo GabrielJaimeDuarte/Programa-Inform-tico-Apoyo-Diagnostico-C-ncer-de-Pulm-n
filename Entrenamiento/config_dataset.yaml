@@ -1,0 +1,7 @@
+path: D:/Modelo_Prueba_2/data
+train: images/train
+val: images/val
+
+# Número de clases y sus nombres
+names:
+  0: nodulo
