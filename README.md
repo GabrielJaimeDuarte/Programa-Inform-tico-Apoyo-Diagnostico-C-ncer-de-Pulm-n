@@ -1,5 +1,5 @@
 # Sistema Automatizado de Detección de Nódulos Pulmonares
-### Proyecto de Grado — Ingeniería 2026
+### Proyecto de Grado — Gabriel Jaime Duarte López - Camilo José Cifuentes Garzón - Ingeniería Electrónica 2026
 ### YOLOv8 Triple Ensemble + NMS 3D + Clasificación Clínica en 4 Niveles
 
 ---
