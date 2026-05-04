@@ -4,7 +4,7 @@
 
 ---
 
-## 📋 Descripción General
+##  Descripción General
 
 Este proyecto desarrolla un sistema de detección automatizada de nódulos pulmonares en imágenes de tomografía computarizada (CT), orientado como herramienta de apoyo al diagnóstico médico. El sistema fue entrenado y validado sobre el dataset público **LUNA16** (LUng Nodule Analysis 2016) y probado en el dataset **LIDC-IDRI** para verificar su capacidad de generalización.
 
@@ -12,7 +12,7 @@ El sistema implementa un enfoque de **Triple Ensemble** basado en tres modelos Y
 
 ---
 
-## 🎯 Métricas Finales — Versión V31
+##  Métricas Finales — Versión V31
 
 ### Por Nódulo Único
 
@@ -60,7 +60,7 @@ El sistema implementa un enfoque de **Triple Ensemble** basado en tres modelos Y
 
 ---
 
-## 🗂️ Estructura del Repositorio
+## Estructura del Repositorio
 
 ```
 PROYECTO_FINAL_NODULOS/
@@ -95,7 +95,7 @@ PROYECTO_FINAL_NODULOS/
 
 ---
 
-## 🧠 Arquitectura del Sistema
+## Arquitectura del Sistema
 
 ### Los Tres Modelos del Ensemble
 
@@ -156,7 +156,7 @@ El algoritmo NMS 3D agrupa las detecciones individuales en slices consecutivos e
 
 ---
 
-## 📦 Dataset
+## Dataset
 
 ### LUNA16 (Dataset de Entrenamiento y Validación)
 
@@ -187,7 +187,7 @@ Dataset padre de LUNA16. Contiene 1,018 casos CT con anotaciones cualitativas de
 
 ---
 
-## 🖥️ Requisitos del Sistema
+## Requisitos del Sistema
 
 | Componente | Mínimo recomendado |
 |---|---|
@@ -199,7 +199,7 @@ Dataset padre de LUNA16. Contiene 1,018 casos CT con anotaciones cualitativas de
 
 ---
 
-## ⚙️ Instalación y Configuración
+## Instalación y Configuración
 
 ### Requisitos de Python
 
@@ -257,7 +257,7 @@ El ejecutable queda en `dist/AnalisisPulmonar.exe`.
 
 ---
 
-## 🏥 Funcionalidades de la Aplicación
+## Funcionalidades de la Aplicación
 
 ### Formatos de Entrada Soportados
 
@@ -291,7 +291,7 @@ El ejecutable queda en `dist/AnalisisPulmonar.exe`.
 
 ---
 
-## 🔬 Reproducibilidad del Entrenamiento
+## Reproducibilidad del Entrenamiento
 
 Los tres scripts de entrenamiento están parametrizados para reproducir exactamente los modelos del ensemble V31. Para reentrenar:
 
@@ -322,7 +322,7 @@ python ENTRENAMIENTO/entrenar_small_v22.py
 
 ---
 
-## ⚠️ Limitaciones
+## Limitaciones
 
 1. **Análisis 2D**: el sistema analiza cada slice de forma independiente. El NMS 3D posterior es una aproximación al análisis volumétrico completo pero no captura todas las características 3D de un nódulo.
 
@@ -336,19 +336,19 @@ python ENTRENAMIENTO/entrenar_small_v22.py
 
 ---
 
-## 📊 Comparación con el Estado del Arte
+## Comparación con el Estado del Arte
 
 El estado del arte en LUNA16 reporta sensibilidades de 90–96% usando GPU con arquitecturas especializadas 3D. Este proyecto logra **88.37% de sensibilidad ejecutando completamente en CPU sin GPU**, con una aplicación completa que incluye interfaz gráfica, clasificación clínica y herramientas de evaluación. El aporte principal no es superar las métricas absolutas sino demostrar la viabilidad de un sistema funcional completo dentro de restricciones reales de hardware.
 
 ---
 
-## ⚖️ Aviso Importante
+## Aviso Importante
 
 > **Este sistema es una herramienta computacional de apoyo al diagnóstico, desarrollada como Proyecto de Grado académico. NO constituye un dispositivo médico certificado ni un diagnóstico médico. Todos los hallazgos deben ser confirmados por un radiólogo o médico especialista certificado.**
 
 ---
 
-## 📁 Archivos No Incluidos en el Repositorio
+## Archivos No Incluidos en el Repositorio
 
 Por limitaciones de tamaño, los siguientes archivos no están incluidos:
 
@@ -361,7 +361,7 @@ Por limitaciones de tamaño, los siguientes archivos no están incluidos:
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 | Tecnología | Versión | Uso |
 |---|---|---|
